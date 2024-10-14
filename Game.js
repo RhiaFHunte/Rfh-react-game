@@ -26,12 +26,12 @@ const resultStyle = {
 
 
 const CHOICES = [
-  { name: "rock", emoji: "✊" },
+  { name: "rock", emoji: "✊" }, 
   { name: "paper", emoji: "✋" },
   { name: "scissors", emoji: "✌️" },
 ];
 
-
+//🪨📃✂️
 
 function Game() {
   const [playerChoice, setPlayerChoice] = useState(null);

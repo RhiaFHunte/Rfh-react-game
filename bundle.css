@@ -5,7 +5,7 @@
    font-family: "Poppins", serif;
    font-weight: 100;
    font-style: normal;
-   background-color: #000000;
+   background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
    color: #ffffff;
    padding: 40px;
  }
@@ -17,16 +17,23 @@
  }
  
  ._Game_module__button {
-   font-size: 48px;
-   background-color: #333333;
-   color: #ffffff;
-   border: 4px solid #ffffff;
-   border-radius: 8px;
-   padding: 20px 40px;
-   margin: 0 20px;
-   cursor: pointer;
-   transition: all 0.2s ease-in-out;
- }
+  font-size: 48px;
+  background: transparent;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  border-radius: 30px;
+  padding: 20px 40px;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  /* Add the default box shadow */
+  box-shadow: 0 0 0 transparent; /* No shadow initially */
+}
+
+._Game_module__button:hover {
+  /* White glow effect on hover */
+  box-shadow: 0 0 15px white, 0 0 20px white, 0 0 40px white;
+}
  
  ._Game_module__results {
    display: flex;

@@ -16,6 +16,8 @@ const nameStyles = {
   margin: 0,
   fontSize: 44,
   color: "#ffff",
+  fontWeight: 'normal', // This could override the bold
+
 };
 
 const resultStyle = {
@@ -23,7 +25,6 @@ const resultStyle = {
   fontSize: 48,
   color: "#ffff",
 }
-
 
 const CHOICES = [
   { name: "rock", emoji: "✊" }, 
@@ -79,14 +80,14 @@ function Game() {
         <div className={styles.results}>
           <div style={choiceStyles}>
             <span style={emojiStyles}>{playerChoice.emoji}</span>
-            <p style={nameStyles}>You chose {playerChoice.name}</p>
+            <p style={nameStyles}><strong>You</strong> chose {playerChoice.name}</p>
           </div>
           <div style={choiceStyles}>
             <span style={emojiStyles}>{codeyChoice.emoji}</span>
-            <p style={nameStyles}>The computer chose {codeyChoice.name}</p>
+            <p style={nameStyles}>The <strong>computer</strong> chose {codeyChoice.name}</p>
           </div>
           <h2 style={resultStyle}>{result}</h2>
-          <button className={styles.button} onClick={resetGame}>Play again</button>
+          <button className={styles.playAgainButton} onClick={resetGame}>Play again</button>
         </div>
       )}
     </div>

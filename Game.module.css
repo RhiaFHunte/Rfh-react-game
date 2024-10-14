@@ -19,7 +19,7 @@
    background-color: #333333;
    color: #ffffff;
    border: 4px solid #ffffff;
-   border-radius: 8px;
+   border-radius: px;
    padding: 20px 40px;
    margin: 0 20px;
    cursor: pointer;
@@ -32,3 +32,7 @@
    align-items: center;
    margin-top: 40px;
  }
+
+ .boldText {
+  font-weight: bold;
+}
